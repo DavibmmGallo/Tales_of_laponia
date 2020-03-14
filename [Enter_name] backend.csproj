@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_Enter_name__backend</RootNamespace>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageIconUrl />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="World\trainingmap.tmx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="World\trainingmap.tmx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Isekaied\Races\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Pictures\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TiledSharp" Version="1.0.1" />
+  </ItemGroup>
+
+</Project>

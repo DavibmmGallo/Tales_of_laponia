@@ -1,0 +1,17 @@
+davi,o raveiro
+
+=======TALES OF LAPONIA======= 
+
+Tema:D&D
+
+Raças: Elfo, Draconiano, Tiefling, humano, Half-Orc
+
+Classes: Assassin, Berserker, Swordsman, Mage, Paladin, Necromancer
+
+Inimigos: Goblin, Slime, Rato Gigante, Morcego, Lobo, Insetos Gigantes
+
+Item types: Armas Melee, Peitorais, Calça, Elmo, Poçoes MP & HP, Aneis, Colares, Escudos
+
+Raridade de itens: Bosta, Comum, Raro, Epico, Lendario, Pertence de lapa
+
+Historia: Caos regia o mundo. O Rei Demonio Javascript e seus exercitos infindáveis de nodes ameaçavam todas as naçoes do continente de Cena Jedna, porém o misterioso Mago "Manuel Lapa" vindo de uma regiao pouquissimo explorada com seus conhecimentos extremos de C, Java, HTML e dessas a mais poderosa, PORTUGOL; batalhou incansavelmente contra o Rei e seus malignos Nodes por 100 dias e 101 noites saindo fialmente vitorioso. Após sua vitoria, o mago Unifica todos os reinos vizinhos, dando inicio ao grande reino de Laponia. após séculos o mago desapareceu misteriosamente, deixando a laponia a beira do colapso devido ao retorno de Javascript. Voçe é um -Raça----Classe- novato que busca trazer a paz de volta a seu reino natal. Busque o mago (ou nao), destrua o demonio(ou nao), conquiste gloria e fama e resgate o reino(ou nao)

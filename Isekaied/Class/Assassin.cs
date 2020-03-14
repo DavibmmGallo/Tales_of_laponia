@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
@@ -39,6 +39,7 @@ namespace _Enter_name__backend.Isekaied.Class
             }
         }
         int tes=0;
+
         /// <see cref = "[Assassin] cover his blades with GH_blood, a strong poison that _is_ based on enemy_HP , 
         /// and deals damage based on his Strength + base_damage +(10/per point)"/>
         public void Poison_slash(Ibase enemy)
@@ -84,6 +85,7 @@ namespace _Enter_name__backend.Isekaied.Class
             sec_s += 1000;
             dmg_b *= 2;
             if (tomare(10000,timer_s,sec_s))
+
             {
                 dmg_b /= 2;
             }
