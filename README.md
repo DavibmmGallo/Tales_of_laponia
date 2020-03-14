@@ -1,2 +1,1 @@
-# Tales_of_laponia -> Itens
-_Itens of the game_
+# Tales_of_laponia
