@@ -19,11 +19,13 @@ namespace _Enter_name__backend.Isekaied
         public double Intelligence { get; set; } // Mana power
         public double Lvl { get; set; }
         public int Money { get; set; }
-        
+
+        public Cooldown cooldown;
+
         public bool isDead = false;
         public Inventory inventory = new Inventory();
         public bool imorrivel = false;
-
+        
         public Ibase(double HP, double CP, double MP, double Str_, double Tough, double intelli, double lvl, int money)
         {
             MAXHP = HP;

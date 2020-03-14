@@ -11,7 +11,7 @@ namespace _Enter_name__backend.Isekaied.Class
 
         public double Fatal_Slash(Ibase enemy)
         {
-            enemy.take_dmg(Strength +((MAXHP - HP)*Lvl/10)*CP);
+            enemy.take_dmg(Strength +50+((MAXHP - HP)*Lvl/10)*CP);
             if (enemy.isDead) Lvl += (1.21 + enemy.Lvl * 0.618);
 
             return enemy.HP;
