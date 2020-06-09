@@ -6,9 +6,9 @@ _Uwp uses and resources_
 
   - Music system
   - Crafting
-  - Classes habilidades
-  - Mapas [1/20]
+  - ~Classes habilidades ~
+  - Mapas [3/5]
   - Sprite dos characters
   - Sprite dos itens
   - Bosses
-  - Battle scene
+  - ~Battle scene~
