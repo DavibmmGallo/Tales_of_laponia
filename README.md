@@ -4,11 +4,11 @@ _Uwp uses and resources_
 (https://thorbjorn.itch.io/tiled)
 # TODO ::
 
-  - Music system
-  - Crafting
+  - ~Music system~
+  - ~Crafting~
   - ~Classes habilidades~
-  - Mapas [3/5]
-  - Sprite dos characters
-  - Sprite dos itens
-  - Bosses
+  - ~Mapas [5/5]~
+  - ~Sprite dos characters~
+  - ~Sprite dos itens~
+  - ~Bosses~
   - ~Battle scene~
