@@ -1,0 +1,90 @@
+﻿<Page
+    x:Class="Tales_of_laponian_front.Overworld.Battlescreen"
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#FF215555" Height="768" Width="1366">
+
+
+    <Grid>
+        <Rectangle x:Name="Combat_Choices" Margin="-2,536,0,0" Stroke="Black" FocusVisualSecondaryBrush="#99000000" Fill="#FF363636" Height="232" VerticalAlignment="Top"/>
+        <Button x:Name="ATK1" Content="ATK1" FontSize="20" Margin="54,543,0,0" VerticalAlignment="Top" Width="168" Height="73" Click="ataque"/>
+        <Button x:Name="ATK2" Content="ATK2" FontSize="20" Margin="54,659,0,0" VerticalAlignment="Top" Width="168" Height="72" Click="ataque"/>
+        <Button x:Name="ATK4" Content="ATK4" FontSize="20" Margin="0,659,65,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="167" Height="72" Click="ataque"/>
+        <Button x:Name="ATK3" Content="ATK3" FontSize="20" Margin="0,543,65,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="167" Height="73" Click="ataque"/>
+        <Button x:Name="Run" Content="Run" Margin="827,602,286,0" FontSize="50" VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="68" Click="ataque">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0074FF" Offset="0.337"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="Enemy_Name" HorizontalAlignment="Left" Margin="32,25,0,0" Text="Enemy_Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Height="25" Foreground="Black" Canvas.ZIndex="1" FontSize="18"/>
+        <Rectangle x:Name="enemy_Display" HorizontalAlignment="Left" Height="152" Margin="12,12,0,0" Stroke="Black" VerticalAlignment="Top" Width="341" RadiusX="50" RadiusY="50" Canvas.ZIndex="0">
+            <Rectangle.Fill>
+                <AcrylicBrush/>
+            </Rectangle.Fill>
+            <Rectangle.FocusVisualPrimaryBrush>
+                <AcrylicBrush TintColor="#CCFFFFFF"/>
+            </Rectangle.FocusVisualPrimaryBrush>
+        </Rectangle>
+        <ProgressBar x:Name="EnemyHp"  HorizontalAlignment="Left" Height="15" Margin="24,88,0,0" Width="259" Canvas.ZIndex="2" VerticalAlignment="Top">
+            <ProgressBar.Background>
+                <AcrylicBrush TintColor="Gray"/>
+            </ProgressBar.Background>
+        </ProgressBar>
+        <TextBox x:Name="Enemy_Hp_Display" HorizontalAlignment="Left" Margin="281,80,0,0" Text="HP" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" Height="32" Canvas.ZIndex="1" RenderTransformOrigin="0.52,0.328"/>
+        <TextBox x:Name="Enemy_lvl_Display" HorizontalAlignment="Left" Margin="230,25,0,0" Text="Lvl XXX" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" Height="41" Canvas.ZIndex="1" FontSize="25"/>
+        <TextBlock x:Name="Enemy_Name_Copy" Margin="0,356,80,0" Text="Enemy_Name" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Foreground="Black" Canvas.ZIndex="1" HorizontalAlignment="Right" Width="251" FontSize="20"/>
+        <Rectangle x:Name="enemy_Display_Copy" Height="172" Margin="0,342,17,0" Stroke="Black" VerticalAlignment="Top" RadiusX="50" RadiusY="50" Canvas.ZIndex="0" HorizontalAlignment="Right" Width="334">
+            <Rectangle.Fill>
+                <AcrylicBrush/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <ProgressBar x:Name="EnemyHp_Copy" Height="17" Margin="0,431,33,0" Canvas.ZIndex="2" VerticalAlignment="Top" HorizontalAlignment="Right" Width="253">
+            <ProgressBar.Background>
+                <AcrylicBrush TintColor="Gray"/>
+            </ProgressBar.Background>
+        </ProgressBar>
+        <TextBox x:Name="Enemy_Hp_Display_Copy" Margin="0,424,286,0" Text="HP" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Canvas.ZIndex="1" HorizontalAlignment="Right" Width="49"/>
+        <TextBox x:Name="Enemy_lvl_Display_Copy" Margin="0,356,33,0" Text="Lvl XXX" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Canvas.ZIndex="1" HorizontalAlignment="Right" Width="121" FontSize="25"/>
+        <Button x:Name="Basic_Hit"  Content="Basic Hit" Margin="285,602,828,0" FontSize="50" VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="72" Click="ataque">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFE81111" Offset="0.305"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="176" Margin="-5,361,0,0" VerticalAlignment="Top" Width="576" Canvas.ZIndex="1" Source="/Assets/PlatformGrass.png"/>
+        <Image Height="233" Margin="961,167,49,0" VerticalAlignment="Top" Canvas.ZIndex="1" Source="/Assets/PlatformEnemy.png"/>
+        <Image x:Name="inimigo_img" Height="281" Margin="0,0,85,487" VerticalAlignment="Bottom" Canvas.ZIndex="2" Source="/Assets/man_pc.png" HorizontalAlignment="Right" Width="302"/>
+        <Image x:Name="player_img" HorizontalAlignment="Left" Height="281" Margin="138,0,0,0" VerticalAlignment="Center" Width="302" Canvas.ZIndex="2" Source="/Assets/skeleto.png"/>
+        <Button x:Name="Bag" FontSize="40" Content="Bag" Margin="0,602,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Height="72" Width="222" Click="Bagin">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFECC30B" Offset="0.349"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Canvas x:Name="bag_scene" Background="CornflowerBlue" Canvas.ZIndex="3" Visibility="Collapsed">
+            <ListBox x:Name="inv_list" Height="536" Width="472"/>
+            <Button Content="Use" Canvas.Left="568" Canvas.Top="215" Height="96" Width="230"/>
+            <Button Content="Back" Canvas.Left="976" Canvas.Top="215" Height="96" Width="230" Click="Back"/>
+            <TextBox Canvas.Top="536" Text="Descrição do item" TextWrapping="Wrap" Height="232" Width="1366"/>
+
+        </Canvas>
+        <ProgressBar x:Name="player_mana_bar" Height="17" Margin="0,466,33,0" Canvas.ZIndex="2" VerticalAlignment="Top" HorizontalAlignment="Right" Width="253" Foreground="#FF1491D9">
+            <ProgressBar.Background>
+                <AcrylicBrush TintColor="Gray"/>
+            </ProgressBar.Background>
+        </ProgressBar>
+        <TextBox x:Name="player_mp" Margin="0,459,286,0" Text="MP" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Canvas.ZIndex="1" HorizontalAlignment="Right" Width="49"/>
+        <TextBox x:Name="enemy_hp_num" HorizontalAlignment="Left" Margin="24,80,0,0" Text="hp" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" Canvas.ZIndex="2" Height="32" Background="{x:Null}" Foreground="Black" FocusVisualPrimaryBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True"/>
+        <TextBox x:Name="player_hp_num" Margin="1207,424,-28,0" Text="hp" TextWrapping="Wrap" VerticalAlignment="Top" Canvas.ZIndex="2" Height="32" Background="{x:Null}" Foreground="Black" FocusVisualPrimaryBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True"/>
+    </Grid>
+</Page>

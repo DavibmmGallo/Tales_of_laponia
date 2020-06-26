@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="Tales_of_laponian_front.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tales_of_laponian_front">
+
+</Application>

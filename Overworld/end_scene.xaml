@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="Tales_of_laponian_front.Overworld.end_scene"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tales_of_laponian_front.Overworld"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Black" Height="768" Width="1366">
+    <Page.Resources>
+        <!-- Storyboard resource: Animates a rectangle's opacity. -->
+        <Storyboard x:Name="myStoryboard">
+            <DoubleAnimation
+            Storyboard.TargetName="MyAnimatedRectangle"
+            Storyboard.TargetProperty="Opacity"
+            From="0.0" To="1.0" Duration="0:0:6"/>
+            <DoubleAnimation
+            Storyboard.TargetName="MyAnimatedRectangle1"
+            Storyboard.TargetProperty="Opacity"
+            From="0.0" To="1.0" Duration="0:0:6"/>
+        </Storyboard>
+    </Page.Resources>
+    <Grid>
+        <Image HorizontalAlignment="Center" Height="1067" Margin="0,10,0,0" VerticalAlignment="Top" Width="1900" Source="/Assets/forest.jpg"/>
+        <Image HorizontalAlignment="Center" Height="999" VerticalAlignment="Top" Width="782" Source="/Assets/jschan.png" />
+        <Rectangle HorizontalAlignment="Left" Height="256" Margin="-238,512,0,0" Stroke="Black" VerticalAlignment="Top" Width="1910" Fill="#4C0D0E0C"/>
+        <Button Content="Forgive" FontSize="30" Margin="808,633,0,0" VerticalAlignment="Top" Height="100" Width="266" Click="Button_Click"/>
+        <Button Content="Kill" FontSize="30"  Margin="1090,633,0,0" VerticalAlignment="Top" Height="100" Width="266" Click="Button_Click_1"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="30" Margin="10,542,0,0" Text="Wait brave hero, it's me Javascript - chan ! 
+                   
+                   
+                  
+ Im sorry for all the troubles i made, will you brave hero forgive me?" TextWrapping="Wrap" VerticalAlignment="Top" Height="222" Width="772" FontFamily="Calibri Light"/>
+        <Canvas x:Name="goodend" Visibility="Collapsed">
+            <Rectangle Height="768" Stroke="Black" Width="1356" Fill="Black"/>
+            <TextBlock x:Name="MyAnimatedRectangle" FontSize="100" Canvas.Left="422" Canvas.Top="317" Text="GOOD END" TextWrapping="NoWrap" Height="130" Width="508"/>
+
+        </Canvas>
+        <Canvas x:Name="badend" Visibility="Collapsed">
+            <Rectangle Height="1080" Stroke="Black" Width="1910" Fill="Black"/>
+            <TextBlock x:Name="MyAnimatedRectangle1" FontSize="100" Canvas.Left="753" Canvas.Top="473" Text="BAD END" TextWrapping="NoWrap" Height="130" Width="508" Foreground="Red"/>
+
+        </Canvas>
+    </Grid>
+</Page>

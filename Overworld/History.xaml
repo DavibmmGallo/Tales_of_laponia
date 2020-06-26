@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="Tales_of_laponian_front.Overworld.History"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tales_of_laponian_front.Overworld"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Black">
+    <Page.Resources>
+        <!-- Storyboard resource: Animates a rectangle's opacity. -->
+        <Storyboard x:Name="myStoryboard">
+            <DoubleAnimation
+            Storyboard.TargetName="MyAnimatedRectangle"
+            Storyboard.TargetProperty="Opacity"
+            From="0.0" To="1.0" Duration="0:0:6"/>
+            <DoubleAnimation
+            Storyboard.TargetName="MyAnimatedRectangle_1"
+            Storyboard.TargetProperty="Opacity"
+            From="0.0" To="1.0" Duration="0:0:6"/>
+            <DoubleAnimation
+            Storyboard.TargetName="MyAnimatedRectangle_2"
+            Storyboard.TargetProperty="Opacity"
+            From="0.0" To="1.0" Duration="0:0:6"/>
+            <DoubleAnimation
+            Storyboard.TargetName="MyAnimatedRectangle_3"
+            Storyboard.TargetProperty="Opacity"
+            From="0.0" To="1.0" Duration="0:0:6"/>
+            <DoubleAnimation
+            Storyboard.TargetName="MyAnimatedRectangle_4"
+            Storyboard.TargetProperty="Opacity"
+            From="0.0" To="1.0" Duration="0:0:6"/>
+        </Storyboard>
+    </Page.Resources>
+    <Grid>
+        <Button Content="Continue..." Margin="0,0,14,26" VerticalAlignment="Bottom" FontFamily="Consolas" FocusVisualSecondaryBrush="{x:Null}" Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" BorderBrush="{x:Null}" Click="gotogame" Height="30" Width="105" HorizontalAlignment="Right"/>
+        <TextBox x:Name="MyAnimatedRectangle" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,42,0,0" Text="Caos regia o mundo." VerticalAlignment="Top" Width="598" TextReadingOrder="Default" FontFamily="Consolas" FontStyle="Normal" FontSize="20" FocusVisualPrimaryBrush="{x:Null}" SelectionHighlightColor="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" AcceptsReturn="True" BorderBrush="{x:Null}" Background="{x:Null}" SelectionHighlightColorWhenNotFocused="#00000000" IsReadOnly="True"/>
+        <TextBox x:Name="MyAnimatedRectangle_1" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,112,0,368" Text="O Rei Demonio Javascript e seus exercitos infindáveis de nodes ameaçavam todas as naçoes do continente de Cena Jedna," Width="760" TextReadingOrder="Default" FontFamily="Consolas" FontStyle="Normal" FontSize="20" FocusVisualPrimaryBrush="{x:Null}" SelectionHighlightColor="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" AcceptsReturn="True" BorderBrush="{x:Null}" Background="{x:Null}" SelectionHighlightColorWhenNotFocused="#00000000" IsReadOnly="True"/>
+        <TextBox x:Name="MyAnimatedRectangle_2" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,177,0,0" Text="porém o misterioso Mago Manuel Lapa vindo de uma regiao pouquissimo explorada com seus conhecimentos extremos de C, Java, HTML e dessas a mais poderosa, PORTUGOL;" VerticalAlignment="Top" Width="760" TextReadingOrder="Default" FontFamily="Consolas" FontStyle="Normal" FontSize="20" FocusVisualPrimaryBrush="{x:Null}" SelectionHighlightColor="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" AcceptsReturn="True" BorderBrush="{x:Null}" Background="{x:Null}" SelectionHighlightColorWhenNotFocused="#00000000" IsReadOnly="True"/>
+        <TextBox x:Name="MyAnimatedRectangle_3" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,260,0,0" Text="Batalhou incansavelmente contra o Rei e seus malignos Nodes por 100 dias e 101 noites saindo fialmente vitorioso." VerticalAlignment="Top" Width="760" TextReadingOrder="Default" FontFamily="Consolas" FontStyle="Normal" FontSize="20" FocusVisualPrimaryBrush="{x:Null}" SelectionHighlightColor="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" AcceptsReturn="True" BorderBrush="{x:Null}" Background="{x:Null}" SelectionHighlightColorWhenNotFocused="#00000000" IsReadOnly="True"/>
+        <TextBox x:Name="MyAnimatedRectangle_4" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,325,0,0" Text="Após sua vitoria, o mago Unifica todos os reinos vizinhos, dando inicio ao grande reino de Laponia. após séculos o mago desapareceu misteriosamente, deixando a laponia a beira do colapso devido ao retorno de Javascript. Voçe é um novato que busca trazer a paz de volta a seu reino natal. Busque o mago (ou nao), destrua o demonio(ou nao), conquiste gloria e fama e resgate o reino(ou nao)
+" VerticalAlignment="Top" Width="827" TextReadingOrder="Default" FontFamily="Consolas" FontStyle="Normal" FontSize="20" FocusVisualPrimaryBrush="{x:Null}" SelectionHighlightColor="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" AcceptsReturn="True" BorderBrush="{x:Null}" Background="{x:Null}" SelectionHighlightColorWhenNotFocused="#00000000" IsReadOnly="True"/>
+    </Grid>
+</Page>

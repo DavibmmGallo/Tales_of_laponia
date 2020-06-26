@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="Tales_of_laponian_front.Class_choice"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tales_of_laponian_front"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Black" Height="768" Width="1366">
+
+    <Grid>
+        <Button x:Name="Mage_btn" Content="" Margin="38,80,1121,307" VerticalAlignment="Stretch" Click="confirrm_class" PointerEntered="show_description" PointerExited="clear_d" HorizontalAlignment="Stretch" FocusVisualSecondaryBrush="{x:Null}" Foreground="{x:Null}" BorderBrush="{x:Null}" FocusVisualPrimaryBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/mage.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Swords_btn" Content="" Margin="311,80,848,307" VerticalAlignment="Stretch" Click="confirrm_class" PointerEntered="show_description" PointerExited="clear_d" HorizontalAlignment="Stretch" BorderBrush="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Foreground="{x:Null}" >
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/sword.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Berserk_btn" Content="" Margin="580,80,579,307" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="confirrm_class" PointerEntered="show_description" PointerExited="clear_d" BorderBrush="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Foreground="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/understroke-_-big-2.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Necro_btn" Content="" Margin="848,80,311,307" VerticalAlignment="Stretch" Click="confirrm_class" PointerEntered="show_description" PointerExited="clear_d" HorizontalAlignment="Stretch" BorderBrush="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Foreground="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/necro.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Assassin_btn" Content="" Margin="1111,80,48,307" VerticalAlignment="Stretch" Click="confirrm_class" PointerEntered="show_description" PointerExited="clear_d" HorizontalAlignment="Stretch" BorderBrush="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Foreground="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/assassin.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="Description_class_box" Margin="38,528,48,40" Text="" TextWrapping="Wrap" RenderTransformOrigin="-0.294,-0.062" Background="#FF2B1806" IsReadOnly="True" SelectionHighlightColor="White" BorderBrush="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Margin="1161,728,0,0" Text="Non authoral images" TextWrapping="Wrap" VerticalAlignment="Top" SelectionHighlightColor="White" FocusVisualSecondaryBrush="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}" IsReadOnly="True"/>
+    </Grid>
+</Page>

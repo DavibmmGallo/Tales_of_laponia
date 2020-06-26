@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Tales_of_laponian_front.race_choice"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tales_of_laponian_front"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource AppBarBackground}" Width="1366" Height="768">
+
+    <Grid>
+        <Button x:Name="Human_btn" Content="Humano" Margin="24,157,1136,308" VerticalAlignment="Stretch" PointerEntered="show_description" PointerExited="Clear_box_d" Click="Confirm_ch" HorizontalAlignment="Stretch"/>
+        <Button x:Name="Orc_btn" Content="Orc" Margin="298,157,862,308" VerticalAlignment="Stretch" PointerEntered="show_description" PointerExited="Clear_box_d" Click="Confirm_ch" HorizontalAlignment="Stretch"/>
+        <Button x:Name="Drac_btn" Content="Draconiano" Margin="580,157,580,308" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" PointerEntered="show_description" PointerExited="Clear_box_d" Click="Confirm_ch"/>
+        <Button x:Name="Tiel_btn" Content="Tiefling" Margin="1123,157,37,308" VerticalAlignment="Stretch" PointerEntered="show_description" PointerExited="Clear_box_d" Click="Confirm_ch" HorizontalAlignment="Stretch"/>
+        <Button x:Name="Elf_btn" Content="Elfo" Margin="856,157,304,308" VerticalAlignment="Stretch" PointerEntered="show_description" PointerExited="Clear_box_d" Click="Confirm_ch" HorizontalAlignment="Stretch"/>
+        <TextBox x:Name="Description_box" Margin="24,521,37,38" Text="" TextWrapping="Wrap" Background="#99361D12" BorderBrush="#FF1F1F1F"/>
+        <Button x:Name="interr_btn" Content="humhumhum" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF2B2A2A" PointerEntered="show_description" PointerExited="Clear_box_d" Click="Confirm_ch"/>
+
+    </Grid>
+</Page>
